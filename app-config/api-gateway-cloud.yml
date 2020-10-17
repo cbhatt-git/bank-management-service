@@ -1,0 +1,32 @@
+zuul:
+  ignoredServices: '*'
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+  sensitive-headers:
+  routes:
+    loan-service:
+      path: /loan-service/**
+      serviceId: loan-service 
+      sensitiveHeaders:
+    user-service:
+      path: /user-service/**
+      serviceId: user-service
+      sensitiveHeaders:
+    auth-server:
+      path: /auth-server/**
+      serviceId: auth-server
+      sensitiveHeaders:
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
+      cors:
+        allowed-methods:
+        - GET
+        allowed-origins:
+        - "*"
+

@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: auth-server
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://bank-management.mysql.database.azure.com:3306/user-service?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: dbadmin@bank-management
+    password: P@ssw0rd
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate.ddl-auto: none
+    generate-ddl: false
+    show-sql: false
+
+  
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
+      cors:
+        allowed-methods:
+        - GET
+        allowed-origins:
+        - "*"
