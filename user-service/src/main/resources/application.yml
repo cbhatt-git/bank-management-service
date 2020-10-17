@@ -1,0 +1,39 @@
+server:
+  port: 3001
+
+spring:
+  application:
+    name: user-service
+    
+  datasource:
+    url: jdbc:mysql://localhost:3306/user-service
+    username: root
+    password: P@ssw0rd
+  jpa:
+    properties:
+      hibernate:
+        dilect: org.hibernate.dialect.MySQL5InnoDBDialect
+
+  
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
+      cors:
+        allowed-methods:
+        - GET
+        allowed-origins:
+        - "*"
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:5000/eureka/
+    register-with-eureka: true
+    fetch-registry: true  
+      
+app:
+  security:
+    checkTokenUrl: http://localhost:9999/oauth/check_token
