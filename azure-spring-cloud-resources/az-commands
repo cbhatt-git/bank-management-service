@@ -1,0 +1,3 @@
+az configure --defaults group=BMS
+az configure --defaults spring-cloud=bank-management-service
+az spring-cloud app create --name api-gateway
