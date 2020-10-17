@@ -35,6 +35,11 @@
 
 	<modules>
 		<module>api-gateway</module>
+		<module>config-server</module>
+		<module>service-discovery</module>
+		<module>auth-server</module>
+		<module>user-service</module>
+		<module>loan-service</module>
 	</modules>
 
 </project>
