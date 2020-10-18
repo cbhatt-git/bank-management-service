@@ -6,7 +6,7 @@
 	<artifactId>bankmanagement</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Bank Management Service</name>
+	<name>bankmanagement</name>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
