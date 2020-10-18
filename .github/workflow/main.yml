@@ -1,0 +1,39 @@
+name: AzureSpringCloud
+on: push
+
+env:
+  GROUP: BMS
+  SERVICE_NAME: bank-management-service
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@main
+
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+
+    - name: maven build, clean
+      run: |
+        mvn clean package -DskipTests
+
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Install ASC AZ extension
+      run: az extension add --name spring-cloud
+
+    - name: Deploy with AZ CLI commands
+      run: |
+        az configure --defaults group=$GROUP
+        az configure --defaults spring-cloud=$SERVICE_NAME
+        az spring-cloud app deploy -n api-gateway --jar-path ${{ github.workspace }}/api-gateway/target/api-gateway-0.0.1-SNAPSHOT.jar
+        az spring-cloud app deploy -n auth-server --jar-path ${{ github.workspace }}/auth-server/target/auth-server-0.0.1-SNAPSHOT.jar
+        az spring-cloud app deploy -n user-service --jar-path ${{ github.workspace }}/user-service/target/user-service-0.0.1-SNAPSHOT.jar
+        # az spring-cloud app deploy -n loan-service --jar-path ${{ github.workspace }}/loan-service/target/loan-service-0.0.1-SNAPSHOT.jar
