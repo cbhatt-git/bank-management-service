@@ -27,4 +27,7 @@ management:
         - GET
         allowed-origins:
         - "*"
-      
+
+app:
+  security:
+    checkTokenUrl: http://localhost:9999/oauth/check_token      
