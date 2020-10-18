@@ -6,7 +6,7 @@
 		<groupId>com.cts.mc.bankmanagement</groupId>
 		<artifactId>bankmanagement</artifactId>
 		<version>1.0-SNAPSHOT</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath>../bankmanagement/pom.xml</relativePath> <!-- lookup parent from repository -->
 	</parent>
 
 	<artifactId>api-gateway</artifactId>
