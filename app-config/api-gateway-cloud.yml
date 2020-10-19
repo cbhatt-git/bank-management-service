@@ -1,3 +1,6 @@
+server:
+  forward-headers-strategy: framework
+  use-forward-headers: true
 zuul:
   ignoredServices: '*'
   host:
