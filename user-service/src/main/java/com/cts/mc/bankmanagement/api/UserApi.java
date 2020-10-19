@@ -15,7 +15,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 
 /**
  * 
- * API specification for User apis
+ * API specification for User apis.
  * 
  * @author chiranjitbhattacharya
  *
