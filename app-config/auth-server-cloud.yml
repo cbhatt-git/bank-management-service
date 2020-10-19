@@ -3,8 +3,8 @@ spring:
     name: auth-server
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://bank-management.mysql.database.azure.com:3306/user-service?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-    username: dbadmin@bank-management
+    url: jdbc:mysql://bank-management-db.mysql.database.azure.com:3306/user-service?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: bms_admin@bank-management-db
     password: P@ssw0rd
   jpa:
     database: mysql

@@ -29,4 +29,6 @@ management:
         - GET
         allowed-origins:
         - "*"
-
+app:
+  security:
+    checkTokenUrl: https://bank-management-service-auth-server.azuremicroservices.io/oauth/check_token
