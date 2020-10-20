@@ -121,4 +121,4 @@ This service enable users to apply and mamnage loans.
 ### CodeMR Reports
 
 [![Screen-Shot-2020-10-20-at-4-35-18-PM.png](https://i.postimg.cc/zGqsgTtz/Screen-Shot-2020-10-20-at-4-35-18-PM.png)](https://postimg.cc/GHSg0TnV)
-[![Screen-Shot-2020-10-20-at-4-35-18-PM.png](https://i.postimg.cc/zGqsgTtz/Screen-Shot-2020-10-20-at-4-35-18-PM.png)](https://postimg.cc/GHSg0TnV)
+[![Screen-Shot-2020-10-20-at-4-34-57-PM.png](https://i.postimg.cc/vB5hhNTp/Screen-Shot-2020-10-20-at-4-34-57-PM.png)](https://postimg.cc/R6VwVGcR)
