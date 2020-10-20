@@ -118,4 +118,7 @@ This service enable users to apply and mamnage loans.
 - Please go [here](https://gitlab.com/chiranjitbhatt/bank-management-service/-/blob/master/loan-service/README.md) to know more about how to run the app in local.
 
 
-> 
+### CodeMR Reports
+
+[![Screen-Shot-2020-10-20-at-4-35-18-PM.png](https://i.postimg.cc/zGqsgTtz/Screen-Shot-2020-10-20-at-4-35-18-PM.png)](https://postimg.cc/GHSg0TnV)
+[![Screen-Shot-2020-10-20-at-4-35-18-PM.png](https://i.postimg.cc/zGqsgTtz/Screen-Shot-2020-10-20-at-4-35-18-PM.png)](https://postimg.cc/GHSg0TnV)
