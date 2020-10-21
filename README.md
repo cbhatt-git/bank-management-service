@@ -122,3 +122,28 @@ This service enable users to apply and mamnage loans.
 
 [![Screen-Shot-2020-10-20-at-4-35-18-PM.png](https://i.postimg.cc/zGqsgTtz/Screen-Shot-2020-10-20-at-4-35-18-PM.png)](https://postimg.cc/GHSg0TnV)
 [![Screen-Shot-2020-10-20-at-4-34-57-PM.png](https://i.postimg.cc/vB5hhNTp/Screen-Shot-2020-10-20-at-4-34-57-PM.png)](https://postimg.cc/R6VwVGcR)
+
+
+# How To Deploy in Azure Spring Cloud?
+
+* Create a MySql database service using Azure management console.
+* Connect the DB from local and execute the sql scripts mentioned in Loan-Service & Auth-Server. (README.md)
+* Create a Azure Spring Cloud Service using management console.  [How To Create?](https://docs.microsoft.com/en-us/azure/spring-cloud/spring-cloud-quickstart?tabs=Azure-CLI&pivots=programming-language-java)
+* Once the Service has been created, we have to configure the Config-Server. We are using the app-config directory in this repository for storing our app configurations. [How to configure?](https://docs.microsoft.com/en-us/azure/spring-cloud/spring-cloud-quickstart-setup-config-server?tabs=Azure-portal&pivots=programming-language-java)
+* No we are ready to create our apps. We will do it by using terminal.
+  >> Open the terminal in the project root directory.
+  >> Execute the below commands 
+    ```
+    az login
+    az configure --defaults group=BMS
+    az configure --defaults spring-cloud=bank-management-service
+    az spring-cloud app create --name api-gateway --env spring.profiles.active=cloud --is-public
+    az spring-cloud app create --name auth-server --env spring.profiles.active=cloud --is-public
+    az spring-cloud app create --name user-service --env spring.profiles.active=cloud
+    az spring-cloud app create --name loan-service --env spring.profiles.active=cloud
+    ```
+    Once this commands are successfully executed you can go and check the management cosole, you will se the apps are created and running with a sample application. Here we have assigned public URl for the API-Gateway and Auth-server.
+* Now we can deploy our app using the below commands
+  ```
+    az spring-cloud app deploy -n hellospring -s <service instance name> -g <resource group name> --jar-path <jar file path>
+  ```
