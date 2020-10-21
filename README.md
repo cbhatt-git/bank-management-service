@@ -143,7 +143,7 @@ This service enable users to apply and mamnage loans.
     az spring-cloud app create --name loan-service --env spring.profiles.active=cloud
     ```
     Once this commands are successfully executed you can go and check the management cosole, you will se the apps are created and running with a sample application. Here we have assigned public URl for the API-Gateway and Auth-server.
-* Now we can deploy our app using the below commands
+* Now we can deploy our apps amnually using the below commands after building the project
   ```
     az spring-cloud app deploy -n hellospring -s <service instance name> -g <resource group name> --jar-path <jar file path>
   ```
