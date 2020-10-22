@@ -13,3 +13,19 @@ az group delete --name <your resource group name; for example: hellospring-15584
 
 az spring-cloud app logs -n api-gateway -s bank-management-service -g BMS --lines 100 -f
 az spring-cloud app logs -n auth-server -s bank-management-service -g BMS --lines 100 -f
+
+
+---- INFO ---
+Azure Resource Group Name: BMS
+Azure Spring Cloud Name: bank-management-service
+
+
+CONFIG SERVER:
+URI: https://github.com/cbhatt-git/bank-management-service/
+Label: main
+Search Path: app-config
+
+DB:
+Service Name: bank-management-db
+Username: bms_admin@bank-management-db
+MySql Version: 5.7

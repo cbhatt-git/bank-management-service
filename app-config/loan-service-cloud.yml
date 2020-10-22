@@ -1,3 +1,7 @@
+server:
+  forward-headers-strategy: framework
+  use-forward-headers: true
+
 spring:
   application:
     name: loan-service
@@ -30,4 +34,4 @@ management:
       
 app:
   security:
-    checkTokenUrl: http://localhost:9999/oauth/check_token   
+    checkTokenUrl: https://bank-management-service-auth-server.azuremicroservices.io/oauth/check_token     

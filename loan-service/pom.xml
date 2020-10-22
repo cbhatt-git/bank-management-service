@@ -137,6 +137,7 @@
 						<exclude>**/config/**</exclude>
 						<exclude>**/entity/**</exclude>
 						<exclude>**/dto/**</exclude>
+						<exclude>**/exception/**</exclude>
 					</excludes>
 				</configuration>
 			</plugin>

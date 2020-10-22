@@ -36,4 +36,4 @@ jobs:
         az spring-cloud app deploy -n api-gateway --jar-path ${{ github.workspace }}/api-gateway/target/api-gateway-0.0.1-SNAPSHOT.jar
         az spring-cloud app deploy -n auth-server --jar-path ${{ github.workspace }}/auth-server/target/auth-server-0.0.1-SNAPSHOT.jar
         az spring-cloud app deploy -n user-service --jar-path ${{ github.workspace }}/user-service/target/user-service-0.0.1-SNAPSHOT.jar
-        # az spring-cloud app deploy -n loan-service --jar-path ${{ github.workspace }}/loan-service/target/loan-service-0.0.1-SNAPSHOT.jar
+        az spring-cloud app deploy -n loan-service --jar-path ${{ github.workspace }}/loan-service/target/loan-service-0.0.1-SNAPSHOT.jar
