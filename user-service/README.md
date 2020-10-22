@@ -30,6 +30,9 @@ This is a Spring Boot Appication which provides APIs to create and amange user i
 
 [![Screen-Shot-2020-10-14-at-1-45-50-AM.png](https://i.postimg.cc/CLR4MBcQ/Screen-Shot-2020-10-14-at-1-45-50-AM.png)](https://postimg.cc/jLrfZ50H)
 
-# Installation (How to deploy in Azure Spring Cloud??)
-//TODO
+# Jacoco Report
+
+[![Screen-Shot-2020-10-22-at-3-22-20-PM.png](https://i.postimg.cc/mZYsdcDN/Screen-Shot-2020-10-22-at-3-22-20-PM.png)](https://postimg.cc/Th3F13np)
+
+# Installation (How to deploy in Azure Spring Cloud??
 `az spring-cloud app deploy -n user-service -s bank-management -g BMS --jar-path target/user-service-0.0.1-SNAPSHOT.jar`
