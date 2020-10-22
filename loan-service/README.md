@@ -53,4 +53,7 @@ Once the app is up and running you can open your browser and go to the below URL
 **__**
 [![Screen-Shot-2020-10-14-at-12-06-06-AM.png](https://i.postimg.cc/0jqJ9F3Z/Screen-Shot-2020-10-14-at-12-06-06-AM.png)](https://postimg.cc/47B35LXh)
 
+# Jacoco Report
+[![Screen-Shot-2020-10-22-at-3-22-53-PM.png](https://i.postimg.cc/8P72rw35/Screen-Shot-2020-10-22-at-3-22-53-PM.png)](https://postimg.cc/56M7h5fd)
+
 Note: All the enpoints are secured with OAuth2, to create a access token you can refer to [here](https://gitlab.com/chiranjitbhatt/bank-management-service/-/blob/master/auth-server/README.md)
