@@ -7,7 +7,7 @@ spring:
     name: loan-service
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://bank-management-db.mysql.database.azure.com:3306/user-service?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    url: jdbc:mysql://bank-management-db.mysql.database.azure.com:3306/loan-service?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: bms_admin@bank-management-db
     password: P@ssw0rd
   jpa:
