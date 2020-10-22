@@ -1,5 +1,5 @@
 az login
-az ad sp create-for-rbac --role contributor --scopes /subscriptions/72dd9490-1206-4ce3-a819-059823a5bff7 --sdk-auth
+az ad sp create-for-rbac --role contributor --scopes /subscriptions/4ba2f97f-267c-4c4d-bbc5-6fc395aff726 --sdk-auth
 
 az configure --defaults group=BMS
 az configure --defaults spring-cloud=bank-management-service
